@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Dark mode toggle (remembers the choice in this browser)
+  const themeToggle = document.getElementById("theme-toggle");
+  const applyTheme = (dark) => {
+    document.body.classList.toggle("dark-mode", dark);
+    themeToggle.textContent = dark ? "☀️" : "🌙";
+  };
+  applyTheme(localStorage.getItem("theme") === "dark");
+  themeToggle.addEventListener("click", () => {
+    const dark = !document.body.classList.contains("dark-mode");
+    localStorage.setItem("theme", dark ? "dark" : "light");
+    applyTheme(dark);
+  });
+
   // DOM elements
   const activitiesList = document.getElementById("activities-list");
   const messageDiv = document.getElementById("message");
