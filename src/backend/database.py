@@ -163,6 +163,17 @@ initial_activities = {
         },
         "max_participants": 16,
         "participants": ["william@mergington.edu", "jacob@mergington.edu"]
+    },
+    "Manga Maniacs": {
+        "description": "Unleash your inner hero! Dive into epic sagas of ninjas, mecha pilots, and spirited heroes from Japanese Manga, and share your favorite plot twists with fellow otaku. Dattebayo!",
+        "schedule": "Tuesdays, 5:00 PM - 6:00 PM",
+        "schedule_details": {
+            "days": ["Tuesday"],
+            "start_time": "17:00",
+            "end_time": "18:00"
+        },
+        "max_participants": 25,
+        "participants": []
     }
 }
 
