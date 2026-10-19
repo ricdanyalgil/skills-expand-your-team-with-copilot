@@ -664,3 +664,22 @@ footer {
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Dark mode */
+body.dark-mode {
+  --primary: #7986cb;
+  --primary-light: #aab6fe;
+  --primary-dark: #283593;
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border: #333333;
+  --border-light: #2a2a2a;
+  --border-focus: #444444;
+}
+
+#theme-toggle {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
